@@ -10,7 +10,7 @@ body {
     url(../images/yellowbackground.jpg);
     background-size: cover;
     background-position: center; */
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    background: linear-gradient(rgba(100,100,100,0.3), rgba(0,0,0,0.4));
     background-color: var(--cyberyellow);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,7 +37,7 @@ body {
 }
 
 .botmainsection {
-    height: 127px;
+    height: auto;
     margin: 3rem 0;
 }
 
@@ -51,8 +51,8 @@ body {
 }
 
 .dotx {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .myinfoblock {
@@ -103,56 +103,56 @@ body {
 }
 
 .figure img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 .figure img.widerimg {
-    width: 120px;
-    height: 90px;
+    width: 110px;
+    height: 80px;
 }
 
 .figure img.bootstrapimg {
-    width: 100px;
-    height: 90px;
+    width: 90px;
+    height: 80px;
 }
 
 .techstack {
     opacity: 0;
-    transform: translateX(10%);
-    -webkit-transform: translateX(10%);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
     transition: opacity 0.5s;
 }
 
 .slide-in {
     opacity: 0;
-    transition: opacity 0.3s;
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
+    transition: opacity 0.2s;
+    animation: slide-in 0.3s forwards;
+    -webkit-animation: slide-in 0.3s forwards;
 }
 
 .slide-out {
     opacity: 100;
-    transition: opacity 0.5s;
-    animation: slide-out 0.5s forwards;
-    -webkit-animation: slide-out 0.5s forwards;
+    transition: opacity 0.2s;
+    animation: slide-out 0.3s forwards;
+    -webkit-animation: slide-out 0.3s forwards;
 }
     
 @keyframes slide-in {
-    100% { transform: translateX(10%); }
+    100% { transform: translateX(5%); }
 }
 
 @-webkit-keyframes slide-in {
-    100% { -webkit-transform: translateX(10%); }
+    100% { -webkit-transform: translateX(5%); }
 }
     
 @keyframes slide-out {
-    0% { transform: translateX(10%); }
+    0% { transform: translateX(5%); }
     100% { transform: translateX(0%); }
 }
 
 @-webkit-keyframes slide-out {
-    0% { -webkit-transform: translateX(10%); }
+    0% { -webkit-transform: translateX(5%); }
     100% { -webkit-transform: translateX(0%); }
 }
 
@@ -180,8 +180,8 @@ body {
 }
 
 .numberdiv {
-    width: 9%;
-    height: 10%;
+    width: 2rem;
+    height: 1.75rem;
 }
 
 .livebtn, .repobtn {
@@ -206,8 +206,8 @@ body {
 
 .projectsection {
     opacity: 100;
-    transform: translateY(10%);
-    -webkit-transform: translateY(10%);
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
     transition: opacity 0.5s;
 }
 
@@ -226,19 +226,19 @@ body {
 }
     
 @keyframes slide-up {
-    100% { transform: translateY(10%); }
+    100% { transform: translateY(5%); }
 }
 
 @-webkit-keyframes slide-up {
-    100% { -webkit-transform: translateY(10%); }
+    100% { -webkit-transform: translateY(5%); }
 }
     
 @keyframes slide-down {
-    0% { transform: translateY(10%); }
+    0% { transform: translateY(5%); }
     100% { transform: translateY(0%); }
 }
 
 @-webkit-keyframes slide-down {
-    0% { -webkit-transform: translateY(10%); }
+    0% { -webkit-transform: translateY(5%); }
     100% { -webkit-transform: translateY(0%); }
 }
