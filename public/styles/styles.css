@@ -18,13 +18,14 @@ body {
     margin: 0 auto;
 }
 
+/* === NAVBAR LINKS === */
 .toplinks .nav-link {
+    color: #000 !important;
     border-bottom: .25rem solid transparent;
 }
 
 .toplinks .nav-link:hover, 
 .toplinks .nav-link:focus {
-    color: #000 !important;
     border-bottom-color: rgba(0,0,0,0.5);
 }
 
@@ -32,29 +33,38 @@ body {
     border-bottom-color: rgba(0,0,0,0.5);
 }
 
+.contactbtn {
+    text-decoration: none;
+    border: none;
+    outline: 3px solid black;
+    background-color: transparent;
+    color: #000;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.contactbtn:hover {
+    background-color: #000;
+    color: var(--cyberlightblue);
+}
+/* === END - NAVBAR LINKS === */
+
+/* === TOP MIDDLE SECTION === */
 .topmainsection {
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
-
-.botmainsection {
-    height: auto;
-    margin: 3rem 0;
-}
-
 .title {
     font-weight: 700;
     font-size: 50px;
-}
-
-.squareslashed {
-    width: 100px;
 }
 
 .dotx {
     width: 90px;
     height: 90px;
 }
+/* === END - TOP MIDDLE SECTION === */
 
+/* === MY INFO BLOCK === */
 .myinfoblock {
     width: 300px;
 }
@@ -68,6 +78,16 @@ body {
 
 .myinfo:hover {
     color: var(--cyberlightblue) !important;
+}
+
+.squareslashed {
+    width: 100px;
+}
+/* === END - MY INFO BLOCK === */
+
+/* === BOTTOM MIDDLE SECTION === */
+.botmainsection {
+    margin: 4rem 0;
 }
 
 .projectbtn {
@@ -102,76 +122,27 @@ body {
     color: var(--cyberlightblue);
 }
 
+.techstack {
+    opacity: 0;
+}
+
 .figure img {
-    width: 80px;
-    height: 80px;
+    width: 4rem;
+    height: 4rem;
 }
 
 .figure img.widerimg {
-    width: 110px;
-    height: 80px;
+    width: 6rem;
 }
 
 .figure img.bootstrapimg {
-    width: 90px;
-    height: 80px;
+    width: 5rem;
+    height: 4rem;
 }
+/* === END - BOTTOM MIDDLE SECTION === */
 
-.techstack {
-    opacity: 0;
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    transition: opacity 0.5s;
-}
-
-.slide-in {
-    opacity: 0;
-    transition: opacity 0.2s;
-    animation: slide-in 0.3s forwards;
-    -webkit-animation: slide-in 0.3s forwards;
-}
-
-.slide-out {
-    opacity: 100;
-    transition: opacity 0.2s;
-    animation: slide-out 0.3s forwards;
-    -webkit-animation: slide-out 0.3s forwards;
-}
-    
-@keyframes slide-in {
-    100% { transform: translateX(5%); }
-}
-
-@-webkit-keyframes slide-in {
-    100% { -webkit-transform: translateX(5%); }
-}
-    
-@keyframes slide-out {
-    0% { transform: translateX(5%); }
-    100% { transform: translateX(0%); }
-}
-
-@-webkit-keyframes slide-out {
-    0% { -webkit-transform: translateX(5%); }
-    100% { -webkit-transform: translateX(0%); }
-}
-
-.contactbtn {
-    text-decoration: none;
-    border: none;
-    outline: 3px solid black;
-    background-color: transparent;
-    color: #000;
-    padding: 5px 10px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.contactbtn:hover {
-    background-color: #000;
-    color: var(--cyberlightblue);
-}
-
-.card {
+/* === HOME PROJECTS SECTION === */
+.homecard {
     border-radius: 0;
     border: none;
     height: 300px;
@@ -179,12 +150,22 @@ body {
     outline: 5px solid black;
 }
 
+.bg-black {
+    background-color: #000;
+}
+
 .numberdiv {
     width: 2rem;
     height: 1.75rem;
 }
 
-.livebtn, .repobtn {
+.projectsection {
+    opacity: 0;
+}
+/* === END - HOME PROJECTS SECTION  === */
+
+/* === PROJECT LIVE + REPO BUTTON === */
+.infobtn, .livebtn, .repobtn {
     border: none;
     border-radius: 0;
     display: inline-block;
@@ -195,50 +176,95 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.livebtn:hover, .repobtn:hover {
+.infobtn:hover, .livebtn:hover, .repobtn:hover {
     transform:  translate(0px, -5px);
     color: var(--cyberlightblue);
 }
+/* === END - PROJECT LIVE + REPO BUTTON === */
 
-.bg-black {
-    background-color: #000;
-}
-
-.projectsection {
-    opacity: 100;
-    transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    transition: opacity 0.5s;
+/* PROJECTS */
+.projectcard {
+    clip-path: polygon(0 0, 96% 0, 100% 10%, 100% 100%, 3% 100%, 0 92%);
 }
 
-.slide-up {
-    opacity: 0;
-    transition: opacity 0.3s;
-    animation: slide-up 0.5s forwards;
-    -webkit-animation: slide-up 0.5s forwards;
+.projectcard2 {
+    clip-path: polygon(3% 0, 100% 0, 100% 92%, 96% 100%, 0 100%, 0 6%);
 }
 
-.slide-down {
-    opacity: 100;
-    transition: opacity 0.5s;
-    animation: slide-down 0.5s forwards;
-    -webkit-animation: slide-down 0.5s forwards;
-}
-    
-@keyframes slide-up {
-    100% { transform: translateY(5%); }
+.bigimg {
+    width: 300px;
 }
 
-@-webkit-keyframes slide-up {
-    100% { -webkit-transform: translateY(5%); }
-}
-    
-@keyframes slide-down {
-    0% { transform: translateY(5%); }
-    100% { transform: translateY(0%); }
+.projectbtns .livebtn, .projectbtns .repobtn {
+    color: #000;
 }
 
-@-webkit-keyframes slide-down {
-    0% { -webkit-transform: translateY(5%); }
-    100% { -webkit-transform: translateY(0%); }
+.projectbtns .livebtn:hover, .projectbtns .repobtn:hover {
+    color: var(--cyberblue);
 }
+/* END - PROJECTS */
+
+
+/* === OTHER === */
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 0.5s ease-in both;
+	animation: fade-in-fwd 0.5s ease-in both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.fade-out-bck {
+	-webkit-animation: fade-out-bck 0.5s ease-out both;
+	animation: fade-out-bck 0.5s ease-out both;
+}
+
+@-webkit-keyframes fade-out-bck {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out-bck {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+}
+/* === END - OTHER === */

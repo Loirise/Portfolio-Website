@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
     res.render('home.ejs');
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.ejs');
+});
+
 app.listen(3000, () => {
     console.log('Serving on port 3000');
 });
