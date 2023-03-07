@@ -76,8 +76,13 @@ body {
     height: 200px;
 }
 
-.myinfo:hover {
-    color: var(--cyberlightblue) !important;
+.myname {
+    color: #fff;
+    text-decoration: none;
+}
+
+.myname:hover {
+    color: var(--cyberlightblue);
 }
 
 .squareslashed {
@@ -203,6 +208,46 @@ body {
     color: var(--cyberblue);
 }
 /* END - PROJECTS */
+
+/* ABOUTME */
+.aboutmesection {
+    margin-top: 1rem;
+    position: relative;
+    background-color: #000;
+    height: 90vh;
+    clip-path: polygon(0 5%, 5% 0, 55% 0, 60% 5%, 100% 5%, 100% 95%, 80% 95%, 75% 100%, 25% 100%, 20% 95%, 0 95%, 0 70%);
+}
+
+.aboutmesection section {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background: linear-gradient(rgba(100,100,100,0.3), rgba(0,0,0,0.4));
+    background-color: var(--cyberyellow);
+    clip-path: polygon(0 5%, 5% 0, 55% 0, 60% 5%, 100% 5%, 100% 95%, 80% 95%, 75% 100%, 25% 100%, 20% 95%, 0 95%, 0 70%);
+}
+
+.filetitle {
+    background-color: #000;
+    height: 5%;
+    padding-left: 17%;
+}
+
+.traits {
+    width: 90%;
+    margin-top: 5rem;
+}
+
+.basicinfo .container .row {
+    margin-top: 1.5rem;
+}
+.basicinfo .container .row:first-child {
+    margin-top: 0;
+}
+
+/* END - ABOUTME */
 
 
 /* === OTHER === */
