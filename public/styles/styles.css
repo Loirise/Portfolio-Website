@@ -53,9 +53,14 @@ body {
 .topmainsection {
     margin-top: 5rem;
 }
+
 .title {
     font-weight: 700;
     font-size: 50px;
+}
+
+.desc {
+    width: 50%;
 }
 
 .dotx {
@@ -129,20 +134,20 @@ body {
 
 .techstack {
     opacity: 0;
+    display: flex;
 }
 
-.figure img {
-    width: 4rem;
-    height: 4rem;
+.figure {
+    width: 3rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.figure img.widerimg {
-    width: 6rem;
-}
-
-.figure img.bootstrapimg {
-    width: 5rem;
-    height: 4rem;
+.figure:first-child {
+    margin-left: 0;
 }
 /* === END - BOTTOM MIDDLE SECTION === */
 
@@ -189,11 +194,17 @@ body {
 
 /* PROJECTS */
 .projectcard {
+    width: 75%;
     clip-path: polygon(0 0, 96% 0, 100% 10%, 100% 100%, 3% 100%, 0 92%);
 }
 
 .projectcard2 {
+    width: 75%;
     clip-path: polygon(3% 0, 100% 0, 100% 92%, 96% 100%, 0 100%, 0 6%);
+}
+
+.projectdesc p {
+    width: 75%;
 }
 
 .bigimg {
@@ -243,11 +254,66 @@ body {
 .basicinfo .container .row {
     margin-top: 1.5rem;
 }
+
 .basicinfo .container .row:first-child {
     margin-top: 0;
 }
-
 /* END - ABOUTME */
+
+/* CONTACT FORM */
+.contactformcontainer {
+    width: 60%;
+    outline: 5px solid black;
+    background-color: transparent;
+    height: 50vh;
+}
+
+.contactformcontainer form {
+    width: 75%;
+}
+
+.contactformcontainer form div {
+    margin-top: 2rem;
+}
+
+.contactformcontainer form button {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    clip-path: polygon(0 15%, 10% 0, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0 85%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contactformcontainer form button:hover {
+    transform: translate(0, -5px);
+    color: var(--cyberlightblue);
+}
+
+.contactformcontainer form div label {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 0 20px;
+    clip-path: polygon(0 100%, 15% 0, 85% 0, 100% 100%);
+}
+
+.contactformcontainer form div input {
+    border-radius: 0;
+    border: none;
+    outline: 2px solid #000;
+}
+
+.contactformcontainer form div textarea {
+    border-radius: 0;
+    border: none;
+    outline: 2px solid #000;
+}
+/* END - CONTACT FORM */
 
 
 /* === OTHER === */
@@ -313,3 +379,152 @@ body {
     }
 }
 /* === END - OTHER === */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 576px) {
+    body {
+        width: 100vw;
+    }
+    .title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .desc {
+        margin: 0 auto 2rem;
+        width: 90%;
+        text-align: center;
+    }
+    .myinfoblock {
+        margin: 0 auto;
+    }
+    .figure {
+        width: 50px;
+    }
+    .botmainsection {
+        margin: 2rem 0;
+    }
+    .homecard {
+        margin: 1rem 0;
+    }
+    .livebtn, .repobtn {
+        margin: 0.5rem 0;
+    }
+    .projectcard {
+        padding: 0;
+        width: 95%;
+        clip-path: none;
+    }
+    .projectcard2 {
+        padding: 0;
+        width: 95%;
+        clip-path: none;
+    }
+    .bigimg {
+        margin: 0 auto;
+        height: 20vh;
+    }
+    .projecttitle, .projectdesc {
+        text-align: center;
+    }
+    .projectdesc p {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .filetitle {
+        opacity: 0;
+        margin-bottom: 10px;
+    }
+    .aboutmesection {
+        min-height: 100vh;
+    }
+    .contactformcontainer {
+        width: 95%;
+    }
+    .contactformcontainer form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        width: 95vw;
+    }
+    .title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 55px;
+    }
+    .desc {
+        font-size: 20px;
+        margin: 0 auto 2rem;
+        width: 90%;
+        text-align: center;
+    }
+    .myinfoblock {
+        margin: 0 auto;
+    }
+    .figure {
+        width: 50px;
+    }
+    .botmainsection {
+        margin: 2rem 0;
+    }
+    .homecard {
+        margin: 1.5rem 0;
+    }
+    .bigimg {
+        margin: 0 auto;
+        height: 20vh;
+    }
+    .projectcard {
+        padding: 0;
+        width: 95%;
+    }
+    .projectcard2 {
+        padding: 0;
+        width: 95%;
+    }
+    .filetitle {
+        padding-left: 3%;
+    }
+    .basicinfo {
+        font-size: 25px !important;
+    }
+    .contactformcontainer {
+        width: 95%;
+    }
+    .contactformcontainer form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        width: 85vw;
+    }
+    .homecard {
+        margin: 1rem 0;
+    }
+    .bigimg {
+        margin: auto;
+        height: 20vh;
+    }
+    .projectcard {
+        width: 85%;
+    }
+    .projectcard2 {
+        width: 85%;
+    }
+    .filetitle {
+        padding-left: 5%;
+    }
+    .contactformcontainer {
+        width: 80%;
+    }
+    .contactformcontainer form {
+        width: 85%;
+    }
+}
+/* END - MEDIA QUERIES */

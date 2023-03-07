@@ -22,7 +22,11 @@ app.get('/projects', (req, res) => {
 
 app.get('/aboutme', (req, res) => {
     res.render('aboutme.ejs');
-})
+});
+
+app.get('/contactme', (req, res) => {
+    res.render('contactform.ejs')
+});
 
 app.listen(3000, () => {
     console.log('Serving on port 3000');
