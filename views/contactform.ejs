@@ -1,18 +1,14 @@
 <% layout('./layouts/boilerplate.ejs') %>
 
 <section class="container my-auto bg-black contactformcontainer d-flex flex-column">
-    <form action="#" class=" mx-auto mt-4 text-center fw-bold">
-        <div class="form-group">
-            <label for="email">Email adress</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        </div>
+    <form action="mailto: wieczorekszymon4@gmail.com" class="mx-auto mt-4 text-center fw-bold">
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="John Smith">
+            <input type="text" class="form-control" id="name" name="name" placeholder="John Smith">
         </div>
         <div class="form-group">
             <label for="message">Message</label>
-            <textarea type="text" rows="4" class="form-control" id="message" placeholder="Hey! I really like your portfolio."></textarea>
+            <textarea type="text" rows="4" class="form-control" id="message" name="comments" placeholder="Hey! I really like your portfolio."></textarea>
         </div>
         <div class="d-flex mt-5">
             <button type="submit" class="mx-auto fw-bold">SEND</button>
