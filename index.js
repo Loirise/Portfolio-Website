@@ -3,6 +3,7 @@ const ejsmate = require('ejs-mate');
 const path = require('path');
 
 const app = express();
+const port = process.env.PORT || 3000
 
 app.engine('ejs', ejsmate);
 app.set('view enginge', 'ejs');
@@ -28,6 +29,6 @@ app.get('/contactme', (req, res) => {
     res.render('contactform.ejs')
 });
 
-app.listen(3000, () => {
-    console.log('Serving on port 3000');
+app.listen(port, () => {
+    console.log(`Serving on port ${port}`);
 });
