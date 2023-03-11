@@ -1,17 +1,17 @@
 <% layout('./layouts/boilerplate.ejs') %>
 
-<section class="container my-auto bg-black contactformcontainer d-flex flex-column">
-    <form action="mailto: wieczorekszymon4@gmail.com" class="mx-auto mt-4 text-center fw-bold">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="John Smith">
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea type="text" rows="4" class="form-control" id="message" name="comments" placeholder="Hey! I really like your portfolio."></textarea>
-        </div>
-        <div class="d-flex mt-5">
-            <button type="submit" class="mx-auto fw-bold">SEND</button>
-        </div>
-    </form>
+<section class="d-flex flex-column justify-content-around align-items-center mx-auto my-auto bg-black contactformcontainer">
+    <div class="contactborder mailinfo">
+        <figure class="d-flex align-items-center">
+            <img src="../public/images/emailicon.png" alt="Mail Icon">
+            <figcaption class="fw-bold ms-2">My Email: <br> wieczorekszymon4@gmail.com</figcaption>
+        </figure>
+    </div>
+    <a href="mailto:wieczorekszymon4@gmail.com?subject=New Portfolio Mail" class="openmail fw-bold">OPEN EMAIL APP</a>
+    <div class="contactborder">
+        <figure class="d-flex align-items-center">
+            <figcaption class="fw-bold">Check my GitHub: </figcaption>
+            <a href="https://github.com/Loirise" target="_blank" rel="noopener noreferrer" class="githubicon ms-3"><i class="devicon-github-original-wordmark colored"></i></a>
+        </figure>
+    </div>
 </section>

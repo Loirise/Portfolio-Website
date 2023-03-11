@@ -285,6 +285,20 @@ body {
 /* END - ABOUTME */
 
 /* CONTACT FORM */
+.contactinfo {
+    border-top: 3px solid black;
+}
+
+.githubicon {
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.contactborder {
+    padding: 1rem 2rem;
+    border: 3px solid black;
+}
+
 .contactformcontainer {
     width: 60%;
     outline: 5px solid black;
@@ -292,18 +306,13 @@ body {
     height: 50vh;
 }
 
-.contactformcontainer form {
-    width: 75%;
+.openmail {
+    text-decoration: none;
 }
 
-.contactformcontainer form div {
-    margin-top: 2rem;
-}
-
-.contactformcontainer form button {
+.openmail {
     border: none;
     border-radius: 0;
-    display: inline-block;
     background-color: #000;
     color: #fff;
     padding: 15px 30px;
@@ -311,32 +320,11 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.contactformcontainer form button:hover {
-    transform: translate(0, -5px);
+.openmail:hover {
+    transform: translate(0, -5px) !important;
     color: var(--cyberlightblue);
 }
 
-.contactformcontainer form div label {
-    border: none;
-    border-radius: 0;
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    padding: 0 20px;
-    clip-path: polygon(0 100%, 15% 0, 85% 0, 100% 100%);
-}
-
-.contactformcontainer form div input {
-    border-radius: 0;
-    border: none;
-    outline: 2px solid #000;
-}
-
-.contactformcontainer form div textarea {
-    border-radius: 0;
-    border: none;
-    outline: 2px solid #000;
-}
 /* END - CONTACT FORM */
 
 
@@ -405,6 +393,80 @@ body {
 /* === END - OTHER === */
 
 /* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    body {
+        width: 85vw;
+    }
+    .homecard {
+        margin: 1rem 0;
+    }
+    .bigimg {
+        margin: auto;
+        height: 20vh;
+    }
+    .projectcard {
+        width: 85%;
+    }
+    .projectcard2 {
+        width: 85%;
+    }
+    .filetitle {
+        padding-left: 5%;
+    }
+    .contactformcontainer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        width: 95vw;
+    }
+    .title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 55px;
+    }
+    .desc {
+        font-size: 20px;
+        margin: 0 auto 2rem;
+        width: 90%;
+        text-align: center;
+    }
+    .myinfoblock {
+        margin: 0 auto;
+    }
+    .figure {
+        width: 50px;
+    }
+    .botmainsection {
+        margin: 2rem 0;
+    }
+    .homecard {
+        margin: 1.5rem 0;
+    }
+    .bigimg {
+        margin: 0 auto;
+        height: 20vh;
+    }
+    .projectcard {
+        padding: 0;
+        width: 95%;
+    }
+    .projectcard2 {
+        padding: 0;
+        width: 95%;
+    }
+    .filetitle {
+        padding-left: 3%;
+    }
+    .basicinfo {
+        font-size: 25px !important;
+    }
+    .contactformcontainer {
+        width: 95%;
+    }
+}
 
 @media (max-width: 576px) {
     body {
@@ -466,89 +528,7 @@ body {
     .contactformcontainer {
         width: 95%;
     }
-    .contactformcontainer form {
-        width: 100%;
-    }
 }
 
-@media (max-width: 992px) {
-    body {
-        width: 95vw;
-    }
-    .title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 55px;
-    }
-    .desc {
-        font-size: 20px;
-        margin: 0 auto 2rem;
-        width: 90%;
-        text-align: center;
-    }
-    .myinfoblock {
-        margin: 0 auto;
-    }
-    .figure {
-        width: 50px;
-    }
-    .botmainsection {
-        margin: 2rem 0;
-    }
-    .homecard {
-        margin: 1.5rem 0;
-    }
-    .bigimg {
-        margin: 0 auto;
-        height: 20vh;
-    }
-    .projectcard {
-        padding: 0;
-        width: 95%;
-    }
-    .projectcard2 {
-        padding: 0;
-        width: 95%;
-    }
-    .filetitle {
-        padding-left: 3%;
-    }
-    .basicinfo {
-        font-size: 25px !important;
-    }
-    .contactformcontainer {
-        width: 95%;
-    }
-    .contactformcontainer form {
-        width: 100%;
-    }
-}
 
-@media (max-width: 1200px) {
-    body {
-        width: 85vw;
-    }
-    .homecard {
-        margin: 1rem 0;
-    }
-    .bigimg {
-        margin: auto;
-        height: 20vh;
-    }
-    .projectcard {
-        width: 85%;
-    }
-    .projectcard2 {
-        width: 85%;
-    }
-    .filetitle {
-        padding-left: 5%;
-    }
-    .contactformcontainer {
-        width: 80%;
-    }
-    .contactformcontainer form {
-        width: 85%;
-    }
-}
 /* END - MEDIA QUERIES */
