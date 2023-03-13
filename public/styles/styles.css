@@ -530,5 +530,11 @@ body {
     }
 }
 
+@media (max-width: 450px){
+    body {
+        width: 93vw;
+    }
+}
+
 
 /* END - MEDIA QUERIES */
